@@ -12,24 +12,25 @@ pip install pyiwsl
 pyiwsl/
 ├─ src/
 │ ├─ example/
-│ │ └─ optics_splicing.py # Example script demonstrating optics-related usage
+│ │ └─ optics_splicing.py       # Example script demonstrating optics-related usage
 │ │
 │ └─ pyiwsl/
-│ ├─ **init**.py # Package root and public entry point
-│ ├─ core.py # Core utilities and shared logic
+│ ├─ init.py        # Package root and public entry point
+│ ├─ core.py        # Core utilities and shared logic
+│ ├─ cad/       # Placeholder for future CAD-related extensions
 │ ├─ optics/
-│ │ ├─ **init**.py # Public API for optics-related functionality
-│ │ └─ pmmanager.py # PMManager log parser (fixed-width / whitespace-aware)
-│ └─ cad/ # Placeholder for future CAD-related extensions
+│ │ ├─ init.py      # Public API for optics-related functionality
+│ │ └─ pmmanager.py         # PMManager log parser
+│ └─ oqs/       # Placeholder for future open quantum system-related extensions
 │
 ├─ tests/
 │ ├─ optics/
-│ │ ├─ data_pmmanager.txt # Sample PMManager log file used for testing
-│ │ └─ test_pmmanager.py # External-file-based tests for the PMManager parser
-│ └─ test_core.py # Unit tests for core utilities
+│ │ ├─ data_pmmanager.txt       # Sample PMManager log file used for testing
+│ │ └─ test_pmmanager.py        # External-file-based tests for the PMManager parser
+│ └─ test_core.py       # Unit tests for core utilities
 │
-├─ pyproject.toml # Project metadata, dependencies, and build configuration
-├─ README.md # Project documentation
-├─ LICENSE # License information
-└─ dist/ # Built distribution artifacts (wheel / sdist)
+├─ pyproject.toml       # Project metadata, dependencies, and build configuration
+├─ README.md        # Project documentation
+├─ LICENSE      # License information
+└─ dist/        # Built distribution artifacts (wheel / sdist)
 ```
