@@ -8,6 +8,7 @@
 pip install pyiwsl
 ```
 
+```
 pyiwsl/
 ├─ src/
 │ ├─ example/
@@ -31,3 +32,4 @@ pyiwsl/
 ├─ README.md # Project documentation
 ├─ LICENSE # License information
 └─ dist/ # Built distribution artifacts (wheel / sdist)
+```
