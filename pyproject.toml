@@ -4,13 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyiwsl"
-version = "0.0.1"
+version = "0.0.2"
 description = "pyiwsl package"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 authors = [{ name = "Duhwan Hwang", email = "naemduu@snu.ac.kr" }]
 license = "MIT AND (Apache-2.0 OR BSD-2-Clause)"
-dependencies = []
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=3.0.0",
+    "gdspy>=1.6.13",
+    "matplotlib>=3.10.8",
+    "pyvisa>=1.16.1",
+]
 
 [project.urls]
 Repository = "https://github.com/naemduu/pyiwsl"
